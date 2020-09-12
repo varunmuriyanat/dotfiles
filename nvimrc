@@ -7,6 +7,7 @@ set incsearch
 set wrap
 set ignorecase
 set virtualedit
+set clipboard+=unnamedplus
 
 :nnoremap \ :nohlsearch<CR> 
 inoremap <tab> <C-t>
