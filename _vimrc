@@ -1,6 +1,7 @@
 "start maximised
 au GUIEnter * simalt ~x
 
+syntax on
 colorscheme slate
 set number
 
