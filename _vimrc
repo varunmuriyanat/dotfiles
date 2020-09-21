@@ -18,6 +18,10 @@ set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
 set backspace=2
 set hlsearch
 
+set colorcolumn=120
+highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
+
+
 :nnoremap \ :nohlsearch<CR> 
 inoremap <tab> <C-t>
 inoremap <S-tab> <C-d>
