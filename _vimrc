@@ -20,7 +20,7 @@ set hlsearch
 set vb t_vb=
 
 set colorcolumn=120
-highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
+highlight ColorColumn ctermbg=DarkBlue guibg=DarkBlue
 
 
 :nnoremap \ :nohlsearch<CR> 
