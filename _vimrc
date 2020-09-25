@@ -19,6 +19,8 @@ set backspace=2
 set hlsearch
 set vb t_vb=
 
+set shortmess-=S
+
 set colorcolumn=120
 highlight ColorColumn ctermbg=DarkBlue guibg=DarkBlue
 
