@@ -5,7 +5,7 @@ set expandtab
 set shiftwidth=4
 set incsearch
 set wrap
-set ignorecase
+set smartcase
 set virtualedit
 set clipboard+=unnamedplus
 
