@@ -11,7 +11,7 @@ set expandtab
 set shiftwidth=4
 set incsearch
 set wrap
-set ignorecase
+set smartcase
 set virtualedit=all
 set clipboard+=unnamedplus
 set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
