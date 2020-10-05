@@ -19,6 +19,11 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 nnoremap \ :nohlsearch<CR>
+inoremap <tab> <C-t>
+inoremap <S-tab> <C-d>
+
+:nnoremap <F5> :buffers<CR>:buffer<Space>
+
 
 set t_Co=256
 set t_ut=
