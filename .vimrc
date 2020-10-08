@@ -15,6 +15,7 @@ set wrap
 set ignorecase
 set clipboard=unnamedplus
 set colorcolumn=80
+set linebreak
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 set hlsearch
