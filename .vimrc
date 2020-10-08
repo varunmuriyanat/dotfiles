@@ -16,6 +16,13 @@ set ignorecase
 set clipboard=unnamedplus
 set colorcolumn=80
 set linebreak
+
+set statusline=%f     " Path to the file
+set statusline+=\:    " Separator
+set statusline+=%l    " Current line
+set statusline+=\/   " Separator
+set statusline+=%L    " Total linesset colorcolumn=80
+
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 set hlsearch
