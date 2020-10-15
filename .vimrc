@@ -5,6 +5,7 @@
 # tell vim to load my personal .vimrc file while sudo
 alias svim='sudo vim -u ~/.vimrc'
 
+
 set number
 set tabstop=4
 set shiftwidth=4
@@ -35,7 +36,6 @@ nnoremap \ :nohlsearch<CR>
 inoremap <tab> <C-t>
 inoremap <S-tab> <C-d>
 
-nnoremap <F5> :buffers<CR>:buffer<Space>
 
 nnoremap <Space> :
 
@@ -44,14 +44,17 @@ map <F1> :h
 imap <F1> <nop>
 imap <F1> <C-r>+
 
-nnoremap <F3> q:
-
 nnoremap <F2> :reg<CR>
+nnoremap <F3> q:
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
 nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
 
 set t_Co=256
 set t_ut=
+
+
 
 
 
