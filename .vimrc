@@ -12,16 +12,17 @@ set softtabstop=4
 set incsearch
 set expandtab
 set wrap
-set ignorecase
+set smartcase
 set clipboard=unnamedplus
 set colorcolumn=80
 set linebreak
 
-set statusline=%f     " Path to the file
-set statusline+=\:    " Separator
-set statusline+=%l    " Current line
-set statusline+=\/   " Separator
-set statusline+=%L    " Total linesset colorcolumn=80
+set statusline=%f     
+set statusline+=\:    
+set statusline+=%l    
+set statusline+=\/   
+set statusline+=%L    
+set statusline+=,col:\%c
 
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
@@ -34,7 +35,23 @@ nnoremap \ :nohlsearch<CR>
 inoremap <tab> <C-t>
 inoremap <S-tab> <C-d>
 
-:nnoremap <F5> :buffers<CR>:buffer<Space>
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
+nnoremap <Space> :
+
+nmap <F1> <nop>
+map <F1> :h 
+imap <F1> <nop>
+imap <F1> <C-r>+
+
+nnoremap <F3> q:
+
+nnoremap <F2> :reg<CR>
+nnoremap <Backspace> <C-u>
+nnoremap <Enter> <C-d>
 
 set t_Co=256
 set t_ut=
+
+
+
