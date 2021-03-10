@@ -41,6 +41,7 @@ inoremap <S-tab> <C-d>
 
 
 nnoremap <Space> :
+nnoremap - $
 
 nmap <Esc> i
 
