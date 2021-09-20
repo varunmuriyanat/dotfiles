@@ -1,37 +1,39 @@
 syntax on
 colorscheme slate
 
-set virtualedit=all
-set relativenumber
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set incsearch
-set expandtab
-set nowrap
-set ignorecase 
+set backspace=2
 set clipboard=unnamedplus
 set colorcolumn=
-set linebreak
-
-set statusline=%f     
-set statusline+=\:    
-set statusline+=%l    
-set statusline+=\/   
-set statusline+=%L    
-set statusline+=,col:\%c
-
-highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
-
+set expandtab
+set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
 set hlsearch
-highlight Search ctermbg=LightYellow
-highlight Search ctermfg=Red
+set ignorecase 
+set incsearch
+set linebreak 
+set nowrap
+set relativenumber
+set shiftwidth=4
+set shortmess-=S 
+set softtabstop=4
+set statusline+=%L    
+set statusline+=%l    
+set statusline+=,col:\%c 
+set statusline+=\/   
+set statusline+=\:    
+set statusline=%f     
+set t_Co=256
+set t_ut= 
+set tabstop=4
+set vb t_vb= 
+set virtualedit=all
 
+highlight ColorColumn ctermbg=darkgrey guibg=darkgrey 
+highlight Search ctermbg=LightYellow
+highlight Search ctermfg=Red 
 
 nnoremap \ :nohlsearch<CR>
 inoremap <tab> <C-t>
-inoremap <S-tab> <C-d>
-
+inoremap <S-tab> <C-d> 
 
 nnoremap <Space> :
 nnoremap - $
@@ -45,15 +47,3 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
-
-set t_Co=256
-set t_ut=
-
-
-set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
-set backspace=2
-set hlsearch
-set vb t_vb=
-
-set shortmess-=S
-
