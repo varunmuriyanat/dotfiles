@@ -14,18 +14,19 @@ set nowrap
 set relativenumber
 set shiftwidth=4
 set shortmess-=S 
-set softtabstop=4
-set statusline+=%L    
-set statusline+=%l    
-set statusline+=,col:\%c 
-set statusline+=\/   
-set statusline+=\:    
-set statusline=%f     
+set softtabstop=4 
 set t_Co=256
 set t_ut= 
 set tabstop=4
 set vb t_vb= 
 set virtualedit=all
+
+set statusline=%f     
+set statusline+=\:    
+set statusline+=%l    
+set statusline+=\/   
+set statusline+=%L    
+set statusline+=,col:\%c
 
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey 
 highlight Search ctermbg=LightYellow
