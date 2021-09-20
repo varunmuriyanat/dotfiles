@@ -40,7 +40,7 @@ nmap <F1> <nop>
 map <F1> :reg<CR>
 imap <F1> <nop>
 imap <F1> <C-r>
-imap <c-u> <esc>viwUea
+inoremap <c-u> <esc>viwUea
 
 nnoremap <F2> q:
 nnoremap <F3> q/
