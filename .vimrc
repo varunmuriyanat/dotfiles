@@ -36,12 +36,9 @@ inoremap <S-tab> <C-d>
 nnoremap <Space> :
 nnoremap - $
 
-nmap <F1> <nop>
-map <F1> :reg<CR>
-imap <F1> <nop>
-imap <F1> <C-r>
 inoremap <c-u> <esc>viwUea
 
+nnoremap <F1> :reg<CR> 
 nnoremap <F2> q:
 nnoremap <F3> q/
 nnoremap <F5> :buffers<CR>:buffer<Space>
