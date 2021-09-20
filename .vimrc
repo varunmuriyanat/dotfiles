@@ -1,3 +1,5 @@
+let mapleader = "-"
+
 syntax on
 colorscheme slate
 
@@ -48,3 +50,5 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
+
+vnoremap <leader>p "_dP
