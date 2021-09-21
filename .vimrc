@@ -7,7 +7,10 @@ set backspace=2
 set clipboard=unnamedplus
 set colorcolumn=
 set expandtab
-set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
+
+"set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
+set guifont=Consolas:h9:l
+
 set hlsearch
 set ignorecase 
 set incsearch
@@ -52,3 +55,4 @@ nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
 
 vnoremap <leader>p "_dP
+nnoremap <leader>m :marks<CR>
