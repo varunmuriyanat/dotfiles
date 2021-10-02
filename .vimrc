@@ -56,3 +56,17 @@ nnoremap <Enter> <C-d>
 
 vnoremap <leader>p "_dP
 nnoremap <leader>m :marks<CR>
+
+"wrap around in double quotes
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+
+"wrap around in single quotes
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
+"search the highlighted text and pull up locallist window
+vnoremap <leader>/ y/\V<C-R>=escape(@",'/\')<cr><cr>:lvimgrep // %<cr>:lopen<cr>
+
+"close locallist window
+nnoremap <leader>lc :lclose<cr>
+
+
