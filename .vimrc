@@ -66,6 +66,9 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 "search the highlighted text and pull up locallist window
 vnoremap <leader>/ y/\V<C-R>=escape(@",'/\')<cr><cr>:lvimgrep // %<cr>:lopen<cr>
 
+"open trigger lvimgrep and open locallist window
+nnoremap <leader>ll :lvimgrep // %<cr>:lopen<cr>
+
 "close locallist window
 nnoremap <leader>lc :lclose<cr>
 
