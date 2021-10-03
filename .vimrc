@@ -83,3 +83,33 @@ nnoremap <leader>ll :lvimgrep // %<cr>:lopen<cr>
 "close locallist window
 nnoremap <leader>lc :lclose<cr>
 
+
+"surround highlighted text in double quotes
+vnoremap <leader>" :<c-u>call SurroundDoublQuotes(visualmode())<cr>
+function! SurroundDoublQuotes(type)
+    let saved_unnamed_register = @@
+    if a:type==# 'v'
+        "execute "normal! `<v`>y/\V" . escape(@@)
+        execute "normal! `<v`>yv`>c\"\<esc>pa\"\<esc>"
+    else
+        return
+    endif
+
+    let @@ = saved_unnamed_register
+endfunction
+
+
+"surround highlighted text in single quotes
+vnoremap <leader>' :<c-u>call SurroundSingleQuotes(visualmode())<cr>
+function! SurroundSingleQuotes(type)
+    let saved_unnamed_register = @@
+    if a:type==# 'v'
+        "execute "normal! `<v`>y/\V" . escape(@@)
+        execute "normal! `<v`>yv`>c\'\<esc>pa\'\<esc>"
+    else
+        return
+    endif
+
+    let @@ = saved_unnamed_register
+endfunction
+
