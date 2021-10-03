@@ -44,6 +44,7 @@ inoremap <S-tab> <C-d>
 nnoremap <Space> :
 nnoremap - $
 
+"change variable names to upper case without leaving insert mode
 inoremap <c-u> <esc>viwUea
 
 "pull up registers
