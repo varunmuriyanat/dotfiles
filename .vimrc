@@ -46,9 +46,19 @@ nnoremap - $
 
 inoremap <c-u> <esc>viwUea
 
+"pull up registers
 nnoremap <F1> :reg<CR> 
+
+"show command history
 nnoremap <F2> q:
+
+"show search history
 nnoremap <F3> q/
+
+"get the full directory path of the current file
+nnoremap <F4> :let @+ = expand("%:p:h")<cr>P
+
+"list buffers
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
 nnoremap <Backspace> <C-u>
@@ -71,5 +81,4 @@ nnoremap <leader>ll :lvimgrep // %<cr>:lopen<cr>
 
 "close locallist window
 nnoremap <leader>lc :lclose<cr>
-
 
