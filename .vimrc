@@ -41,9 +41,6 @@ nnoremap \ :nohlsearch<CR>
 inoremap <tab> <C-t>
 inoremap <S-tab> <C-d> 
 
-nnoremap <Space> :
-nnoremap - $
-
 "change variable names to upper case without leaving insert mode
 inoremap <c-u> <esc>viwUea
 
@@ -65,14 +62,11 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
 
+"reusable paste
 vnoremap <leader>p "_dP
+
+"show marks
 nnoremap <leader>m :marks<CR>
-
-"wrap around in double quotes
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-
-"wrap around in single quotes
-nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
 "search the highlighted text and pull up locallist window
 vnoremap <leader>/ y/\V<C-R>=escape(@",'/\')<cr><cr>:lvimgrep // %<cr>:lopen<cr>
@@ -89,10 +83,7 @@ vnoremap <leader>" :<c-u>call SurroundDoublQuotes(visualmode())<cr>
 function! SurroundDoublQuotes(type)
     let saved_unnamed_register = @@
     if a:type==# 'v'
-        "execute "normal! `<v`>y/\V" . escape(@@)
         execute "normal! `<v`>yv`>c\"\<esc>pa\"\<esc>"
-    else
-        return
     endif
 
     let @@ = saved_unnamed_register
@@ -104,12 +95,8 @@ vnoremap <leader>' :<c-u>call SurroundSingleQuotes(visualmode())<cr>
 function! SurroundSingleQuotes(type)
     let saved_unnamed_register = @@
     if a:type==# 'v'
-        "execute "normal! `<v`>y/\V" . escape(@@)
         execute "normal! `<v`>yv`>c\'\<esc>pa\'\<esc>"
-    else
-        return
     endif
 
     let @@ = saved_unnamed_register
 endfunction
-
