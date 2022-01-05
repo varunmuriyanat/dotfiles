@@ -32,7 +32,7 @@ set statusline+=%l
 set statusline+=\/   
 set statusline+=%L    
 set statusline+=,col:\%c
-set mouser=n
+set mouse=n
 
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey 
 highlight Search ctermbg=LightYellow
