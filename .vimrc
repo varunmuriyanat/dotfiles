@@ -7,10 +7,7 @@ set backspace=2
 set clipboard=unnamedplus
 set colorcolumn=
 set expandtab
-
-"set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
-set guifont=Consolas:h9:l
-
+set guifont=Droid_Sans_Mono_Slashed:h10:cANSI:qDRAFT
 set hlsearch
 set ignorecase 
 set incsearch
@@ -42,26 +39,21 @@ nnoremap \ :nohlsearch<CR>
 inoremap <tab> <C-t>
 inoremap <S-tab> <C-d> 
 
-"change variable names to upper case without leaving insert mode
+nnoremap <Space> :
+
 inoremap <c-u> <esc>viwUea
 
-"pull up registers
 nnoremap <F1> :reg<CR> 
-
-"show command history
 nnoremap <F2> q:
-
-"show search history
 nnoremap <F3> q/
 
 "get the full directory path of the current file
 nnoremap <F4> :let @+ = expand("%:p:h")<cr>P
-
-"list buffers
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
 nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
+
 
 "reusable paste
 vnoremap <leader>p "_dP
