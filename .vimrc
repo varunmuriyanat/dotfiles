@@ -60,9 +60,9 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 nnoremap <Backspace> <C-u>
 nnoremap <Enter> <C-d>
 
-" map arrows keys to go forward/backword 1 page
-nnoremap <Down> <C-f>
-nnoremap <Up> <C-b>
+" map arrows keys to scroll up/down
+nnoremap <Up> <C-y>0 
+nnoremap <Down> <C-e>0 
 
 " map left/right arrows keys to jump to extreme left/right
 nnoremap <Left> 0
