@@ -83,6 +83,17 @@ nnoremap <leader>ll :lvimgrep // %<cr>:lopen<cr>
 "close locallist window
 nnoremap <leader>lc :lclose<cr>
 
+"horizontal scroll
+nnoremap <S-ScrollWheelUp> <ScrollWheelLeft>
+nnoremap <S-ScrollWheelDown> <ScrollWheelRight>
+
+
+" execute current line in bash
+nmap <F6> :exec '!'.getline('.')<CR>
+
+" open the file under the cursor in a vertical window
+map <F8> :vertical wincmd f<CR>
+
 
 "surround highlighted text in double quotes
 vnoremap <leader>" :<c-u>call SurroundDoublQuotes(visualmode())<cr>
